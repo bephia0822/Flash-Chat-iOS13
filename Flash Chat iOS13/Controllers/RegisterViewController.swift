@@ -22,7 +22,7 @@ class RegisterViewController: UIViewController {
                 print(e.localizedDescription)//用用戶手機的語言提醒用戶密碼要打6個數字以上
             } else {
                 //Navigate to the ChatViewController
-                self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                self.performSegue(withIdentifier: K.registerSegue, sender: self)
             }
         }
       }
